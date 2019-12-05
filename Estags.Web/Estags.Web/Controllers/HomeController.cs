@@ -19,7 +19,7 @@ namespace Estags.Web.Controllers {
         }
 
         public IActionResult Contact() {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Criar Vagas.";
 
             return View();
         }

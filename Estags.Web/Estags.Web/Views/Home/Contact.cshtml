@@ -1,17 +1,47 @@
 ﻿@{
-    ViewData["Title"] = "Contact";
+    ViewData["Title"] = "Vagas";
 }
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<head>
+    <style>
+    </style>
+    <title>Formulário HTML</title>
+    <meta charset="utf-8" />
+    <link href="~/css/site.css" rel="stylesheet">
+</head>
+<body style="background-color:#ff6d00">
+    <form class="form-group " method="post">
+        <p> Crie a vaga preenchendo o formulário abaixo</p>
+
+        <div class="field">
+            <label for="nome"> Nome da vaga:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite digite a vaga*" required>
+        </div>
+
+        <div class="form-group ">
+            <label for="exampleFormControlSelect1">Quantidade de vagas</label>
+            <input type="text" id="quantidade" name="quantidade de vagas" placeholder="Digite a quantidade de vaga*" required>
+           
+        </div>
+
+
+        <div class="field">
+            <label for="mensagem">Descrição da vaga:</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+        </div>
+
+        <div class="field">
+            <label for="mensagem">Status da vaga:</label>
+            <input type="text" id="status vaga" name="status da vaga" placeholder="Digite o status da vaga*" required>
+        </div>
+        <br />
+
+        <input type="submit" class="btn btn-primary" name="acao" value="Enviar">
+    </form>
+</body>
+</html>
