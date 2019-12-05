@@ -1,0 +1,28 @@
+﻿@model Estags.Web.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "_LayoutLogin";
+
+
+
+}
+    <div class="text-center">
+        @using (Html.BeginForm("Login", "Login", FormMethod.Post, new { @class = "form-signin text-center" }))
+        {
+            <img class="mb-4" src="~/img/imgLogin/Logo_BRQ_versao_1.png" alt="imgBrq" width="290" height="180">
+            <h1 class="h3 mb-3 font-weight-normal">Entre</h1>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            @Html.TextBoxFor(m => Model.Usuario, new { @class = "form-control" })<br />
+            @Html.ValidationMessageFor(m => Model.Usuario)
+            <br />
+            <label for="inputPassword" class="sr-only">Password</label>
+            @Html.PasswordFor(m => Model.Senha, new { @class = "form-control", @placeholder="Senha"})<br />
+            @Html.ValidationMessageFor(m => Model.Senha)
+            <br />
+            <p><a href="">Esqueci Senha</a></p>
+            <p>Registre-se<a href="https://localhost:5001/Home/Privacy"> Aqui!</a></p>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+        }
+
+    </div>
+
