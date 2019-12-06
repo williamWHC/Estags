@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿
 using Estags.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,7 +15,7 @@ namespace Estags.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (model.Usuario == "Eric" && model.Senha == "teste")
+                if (model.Usuario == "william" && model.Senha == "senha")
                 {
                     return RedirectToAction("Index", "Home");
                 }

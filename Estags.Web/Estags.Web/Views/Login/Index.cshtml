@@ -7,12 +7,12 @@
 
 }
     <div class="text-center">
-        @using (Html.BeginForm("Login", "Login", FormMethod.Post, new { @class = "form-signin text-center" }))
+        @using (Html.BeginForm("Login", "Login", FormMethod.Post, new { @class = "form-signin" }))
         {
             <img class="mb-4" src="~/img/imgLogin/Logo_BRQ_versao_1.png" alt="imgBrq" width="290" height="180">
             <h1 class="h3 mb-3 font-weight-normal">Entre</h1>
             <label for="inputEmail" class="sr-only">Email address</label>
-            @Html.TextBoxFor(m => Model.Usuario, new { @class = "form-control" })<br />
+            @Html.TextBoxFor(m => Model.Usuario, new { @class = "form-control", @placeholder= "Usuario" })<br />
             @Html.ValidationMessageFor(m => Model.Usuario)
             <br />
             <label for="inputPassword" class="sr-only">Password</label>

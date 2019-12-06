@@ -46,7 +46,7 @@ namespace Estags.Web {
             app.UseMvc(routes => {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Login}/{action=Login}/{id?}");
+                    template: "{controller=Login}/{action=Index}/{id?}");
             });
         }
     }
